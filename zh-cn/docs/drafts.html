@@ -1,0 +1,16 @@
+<h2 id="title-Drafts"><a href="#title-Drafts" class="headerlink" title="title: Drafts"></a>title: Drafts</h2><h2 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h2><p>You can create a draft by using <code>hexo new</code> command. For example:</p>
+<p>您可以通过使用 <code>hexo new</code> 命令新建草稿。举例如下：</p>
+<pre><code class="bash">$ hexo new draft &lt;title&gt;
+</code></pre>
+<p>Files will be saved in <code>source/_drafts</code> folder.</p>
+<p>文件将会被保存到 <code>source/_drafts</code> 文件夹。</p>
+<h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><p>如果想预览网站中的草稿文章，您可以在 <code>_config.yml</code> 中配置 <code>render_drafts</code> 信息：</p>
+<pre><code class="yaml">render_drafts: true
+</code></pre>
+<p>或者运行 <code>hexo server</code> 并使用 <code>-d</code> 或 <code>--drafts</code> 参数。</p>
+<pre><code class="bash">$ hexo server --drafts
+</code></pre>
+<h2 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h2><p>一旦完成草稿，您可以使用命令发布 <code>hexo publish</code> 该草稿。</p>
+<pre><code class="bash">$ hexo publish [layout] &lt;filename&gt;
+</code></pre>
+<p>文件将会被转移到 <code>source/_posts</code> 文件夹，并使用命令中的指定布局进行解析。</p>

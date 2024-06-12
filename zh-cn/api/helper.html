@@ -1,0 +1,11 @@
+<h2 id="title-辅助函数（Helper）"><a href="#title-辅助函数（Helper）" class="headerlink" title="title: 辅助函数（Helper）"></a>title: 辅助函数（Helper）</h2><p>辅助函数帮助您在模板中快速插入内容，建议您把复杂的代码放在辅助函数而非模板中。</p>
+<h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><pre><code class="js">hexo.extend.helper.register(name, function(){
+});
+</code></pre>
+<h2 id="范例"><a href="#范例" class="headerlink" title="范例"></a>范例</h2><pre><code class="js">hexo.extend.helper.register(&#39;js&#39;, function(path){
+  return &#39;&lt;script type=&quot;text/javascript&quot; src=&quot;&#39; + path + &#39;&quot;&gt;&lt;/script&gt;&#39;;
+});
+</code></pre>
+<pre><code class="js">&lt;%- js(&#39;script.js&#39;) %&gt;
+// &lt;script type=&quot;text/javascript&quot; src=&quot;script.js&quot;&gt;&lt;/script&gt;
+</code></pre>
